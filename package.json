@@ -1,0 +1,23 @@
+{
+  "name": "arguitron-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arguitron/arguitron-web.git"
+  },
+  "author": "Abel Guitron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arguitron/arguitron-web/issues"
+  },
+  "homepage": "https://github.com/arguitron/arguitron-web#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "particles.js": "^2.0.0"
+  }
+}
