@@ -5,7 +5,7 @@
   --icon-name-inactive: #474747;
   --icon-name-active: #fff;
   --bg-html: #ff7600;
-  --bg-css: #3db2ff;
+  --bg-css: #246997;
   --bg-js: #f2f013;
   --bg-git: #ff7600;
   --bg-python: #e4e156;
@@ -249,17 +249,7 @@ h2 {
   //margin: 5px;
   border-radius: 10px;
 }
-/*
-.tag-txt {
-  font-weight: bold;
-  border-radius: 3px;
-  padding: 2px 4px;
-  visibility: hidden;
-}*/
 
-.aux {
-  box-sizing: border-box;
-}
 .tag-txt-jquery {
   background-color: #fff;
   color: #3db2ff;
@@ -311,8 +301,75 @@ h2 {
   padding: 2px 4px;
 }
 
-#projects {
+.projects-section {
   background-color: #272727;
+}
+
+.project {
+  display: flex;
+}
+
+.project__sample {
+  width: 100%;
+  padding: 30px;
+
+  border-radius: 5px;
+}
+
+.project__sample__img {
+  width: 100%;
+  border-radius: 15px;
+}
+.project__skill {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 10px;
+  background-color: #201e1e;
+  padding: 20px;
+  border: 2px solid var(--bg-green);
+  border-radius: 10px;
+}
+
+.tag-txt-html {
+  background-color: var(--bg-html);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-bottom: 2px;
+  padding: 2px 4px;
+}
+
+.tag-txt-css {
+  background-color: var(--bg-css);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-bottom: 2px;
+  padding: 2px 4px;
+}
+
+.tag-txt-js {
+  background-color: var(--bg-js);
+  color: #272727;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-bottom: 2px;
+  padding: 2px 4px;
+}
+
+.project__desc {
+  padding: 0 30px 30px 30px;
+}
+
+.project__desc__title {
+  color: var(--bg-green);
+}
+
+.project__desc__txt {
+  background-color: #201e1e;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 #contact-me {
