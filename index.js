@@ -21,81 +21,30 @@ let skills = {
   },
   html: {
     class: ".fa-html5",
-    tags: [],
+    tags: ["tag-txt-pending"],
   },
   python: {
     class: ".fa-python",
-    tags: [],
+    tags: ["tag-txt-pending"],
   },
 };
 
-document
-  .querySelector(".fa-js-square")
-  .addEventListener("mouseover", function () {
-    content = "";
+for (let key in skills) {
+  document
+    .querySelector(skills[key]["class"])
+    .addEventListener("mouseover", function () {
+      content = "";
 
-    js.map((tagClass) => {
-      content += `<div class="tag">
+      skills[key]["tags"].map((tagClass) => {
+        content += `<div class="tag-container">
+      <div class="tag">
       <p class=${tagClass}>${
-        tagClass.split("-")[tagClass.split("-").length - 1]
-      }</p>
+          tagClass.split("-")[tagClass.split("-").length - 1]
+        }</p>
+    </div>
     </div>`;
+      });
+
+      document.querySelector(".tools").innerHTML = content;
     });
-    document.querySelector(".tools").innerHTML = content;
-  });
-
-document
-  .querySelector(".fa-css3-alt")
-  .addEventListener("mouseover", function () {
-    content = "";
-
-    css.map((tagClass) => {
-      content += `<div class="tag">
-      <p class=${tagClass}>${
-        tagClass.split("-")[tagClass.split("-").length - 1]
-      }</p>
-    </div>`;
-    });
-    document.querySelector(".tools").innerHTML = content;
-  });
-
-document.querySelector(".fa-html5").addEventListener("mouseover", function () {
-  content = "";
-
-  html.map((tagClass) => {
-    content += `<div class="tag">
-      <p class=${tagClass}>${
-      tagClass.split("-")[tagClass.split("-").length - 1]
-    }</p>
-    </div>`;
-  });
-  document.querySelector(".tools").innerHTML = content;
-});
-
-document
-  .querySelector(".fa-git-alt")
-  .addEventListener("mouseover", function () {
-    content = "";
-
-    git.map((tagClass) => {
-      content += `<div class="tag">
-      <p class=${tagClass}>${
-        tagClass.split("-")[tagClass.split("-").length - 1]
-      }</p>
-    </div>`;
-    });
-    document.querySelector(".tools").innerHTML = content;
-  });
-
-document.querySelector(".fa-python").addEventListener("mouseover", function () {
-  content = "";
-
-  python.map((tagClass) => {
-    content += `<div class="tag">
-      <p class=${tagClass}>${
-      tagClass.split("-")[tagClass.split("-").length - 1]
-    }</p>
-    </div>`;
-  });
-  document.querySelector(".tools").innerHTML = content;
-});
+}

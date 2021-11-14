@@ -241,9 +241,12 @@ h2 {
   grid-template-rows: repeat(5, 1fr);
   max-height: 100%;
 }
+.tag-container {
+  padding: 2px;
+}
 .tag {
   text-align: center;
-  margin: 5px;
+  //margin: 5px;
   border-radius: 10px;
 }
 /*
@@ -293,6 +296,15 @@ h2 {
 .tag-txt-nodejs {
   background-color: #34be82;
   color: #272727;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-bottom: 2px;
+  padding: 2px 4px;
+}
+
+.tag-txt-pending {
+  background-color: #222222;
+  color: #fff;
   font-weight: bold;
   border-radius: 3px;
   padding-bottom: 2px;
