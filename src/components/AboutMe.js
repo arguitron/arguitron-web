@@ -8,7 +8,7 @@ export const AboutMe = () => {
     <CenterContainer>
       <PresentationCard>
         <div className="presentation-img">
-          <img className="blob" src="/assets/blob-haikei.svg" alt="blob" />
+          <img className="blob" src="/assets/blob-haikei2.svg" alt="blob" />
           <img className="me" src="/assets/io.png" alt="me" />
         </div>
         <div>

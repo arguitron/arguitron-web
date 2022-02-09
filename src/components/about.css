@@ -1,13 +1,15 @@
 .presentation-img {
   position: relative;
+  text-align: left;
 }
 
 .blob {
   width: 20em;
+  border-radius: 2em;
 }
 
 .me {
   position: absolute;
-  left: 4em;
+  left: 4.5em;
   top: 1em;
 }

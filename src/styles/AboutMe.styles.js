@@ -4,5 +4,5 @@ export const AboutMe = styled.div``;
 
 export const PresentationCard = styled.div`
   display: flex;
-  padding: 1.5em;
+  /* padding: 1.5em; */
 `;
