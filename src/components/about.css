@@ -1,0 +1,13 @@
+.presentation-img {
+  position: relative;
+}
+
+.blob {
+  width: 20em;
+}
+
+.me {
+  position: absolute;
+  left: 4em;
+  top: 1em;
+}
