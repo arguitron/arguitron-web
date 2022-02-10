@@ -1,15 +1,21 @@
 .presentation-img {
   position: relative;
   text-align: left;
+  width: 10em;
 }
 
 .blob {
-  width: 20em;
+  width: 100%;
   border-radius: 2em;
 }
 
 .me {
-  position: absolute;
-  left: 4.5em;
-  top: 1em;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+* {
+  font-family: "Lato", sans-serif;
 }

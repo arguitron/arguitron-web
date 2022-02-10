@@ -6,6 +6,13 @@ import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
+const onProgress = {
+  id: "onp1",
+  name: "currently learning...",
+  bgColor: "blue",
+  color: "#fff",
+};
+
 export const skills = [
   {
     id: "faHtml5",
@@ -16,8 +23,8 @@ export const skills = [
       bgColor: "orange",
       color: "#fff",
     },
-
-    subSkills: [],
+    isSubskills: false,
+    subSkills: [onProgress],
   },
   {
     id: "faCss3Alt",
@@ -28,8 +35,8 @@ export const skills = [
       bgColor: "blue",
       color: "#fff",
     },
-
-    subSkills: [],
+    isSubskills: false,
+    subSkills: [onProgress],
   },
   {
     id: "faJsSquare",
@@ -40,6 +47,7 @@ export const skills = [
       bgColor: "yellow",
       color: "#000",
     },
+    isSubskills: false,
     subSkills: [
       {
         id: "reactjs",
@@ -58,6 +66,7 @@ export const skills = [
       bgColor: "blue",
       color: "#fff",
     },
+    isSubskills: false,
     subSkills: [
       {
         id: "reactRouter",
@@ -82,6 +91,7 @@ export const skills = [
       bgColor: "orange",
       color: "#fff",
     },
-    subSkills: [],
+    isSubskills: false,
+    subSkills: [onProgress],
   },
 ];

@@ -15,18 +15,21 @@ import { CenterContainer } from "../styles/General.styles";
 
 export const Skills = () => {
   const [subSkills, setSubskills] = useState([]);
+  const [currentSkill, setCurrentSkill] = useState("");
 
-  const handleSubskills = (subSkills) => {
-    subSkills && setSubskills([...subSkills]);
+  const handleSubskills = (skill) => {
+    setCurrentSkill(skill.id);
+    subSkills && setSubskills([...skill.subSkills]);
   };
   return (
     <CenterContainer>
       <SkillsContainer>
         <LeftSkills>
           {skills.map((skill) => (
-            <SkillIcon key={skill.id} iconColor={skill.iconColor}>
+            <SkillIcon key={skill.id} {...skill} currentSkill={currentSkill}>
               <FontAwesomeIcon
-                onClick={() => handleSubskills(skill.subSkills)}
+                className="skillIcon"
+                onMouseEnter={() => handleSubskills(skill)}
                 icon={skill.icon}
                 size="3x"
               />
@@ -35,7 +38,16 @@ export const Skills = () => {
         </LeftSkills>
         <RightSkills>
           {subSkills.map(
-            (skill) => skill && <SkillTag key={skill.id}>{skill.name}</SkillTag>
+            (skill) =>
+              skill && (
+                <SkillTag
+                  className="tag animate__animated animate__fadeIn"
+                  key={skill.id}
+                  {...skill}
+                >
+                  {skill.name}
+                </SkillTag>
+              )
           )}
         </RightSkills>
       </SkillsContainer>

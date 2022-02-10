@@ -8,12 +8,16 @@ export const AboutMe = () => {
     <CenterContainer>
       <PresentationCard>
         <div className="presentation-img">
-          <img className="blob" src="/assets/blob-haikei2.svg" alt="blob" />
           <img className="me" src="/assets/io.png" alt="me" />
         </div>
         <div>
           <h3>Abel Resendiz Guitron</h3>
-          <p>Una descripción muy chida</p>
+          <p>
+            I'm a passionate developer graduated from Instituto Politécnico
+            Nacional (IPN). Currently I'm investing my time to master
+            Javascript, but I also learnt some other programming languages from
+            college.
+          </p>
         </div>
       </PresentationCard>
     </CenterContainer>
