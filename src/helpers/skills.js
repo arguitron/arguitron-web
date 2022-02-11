@@ -52,8 +52,8 @@ export const skills = [
       {
         id: "reactjs",
         name: "reactjs",
-        bgColor: "blue",
-        color: "#fff",
+        bgColor: "#000",
+        color: "blue",
       },
     ],
   },
