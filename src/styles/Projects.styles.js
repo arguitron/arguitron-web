@@ -1,24 +1,27 @@
 import styled from "styled-components";
-
-export const ProjectsSection = styled.div`
-  padding: 1.5em;
-  border: 1px solid black;
+import { SkillTag } from "./Skills.styles";
+export const ProjectsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  gap: 1.5em;
 `;
 export const Project = styled.div`
-  position: relative;
-  overflow: hidden;
+  background-color: #272727;
+  padding: 1.5em;
+  color: #fff;
+  border-radius: 0.5em; ;
 `;
+
+export const ProjectTitle = styled.h3``;
 export const ProjectImg = styled.img.attrs({
   src: "/assets/projects/todoApp.png",
 })`
-  display: absolute;
-  z-index: -10;
   width: 100%;
 `;
 
-export const ProjectGradient = styled.div`
-  background-image: linear-gradient(0deg, #0703f0, transparent);
-  width: 100%;
-  height: 100%;
-  position: absolute;
+export const ProjectSkillTag = styled(SkillTag)`
+  position: relative;
+  z-index: 5;
 `;
+
+export const ProjectDescription = styled.div``;

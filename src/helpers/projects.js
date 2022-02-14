@@ -1,8 +1,8 @@
 const reactTag = {
   id: "reactjsTag",
   name: "reactjs",
-  bgColor: "#000",
-  color: "blue",
+  bgColor: "#2C3333",
+  color: "#398AB9",
 };
 
 const reactRouterTag = {

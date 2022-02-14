@@ -1,23 +1,40 @@
 import React from "react";
 import { projects } from "../helpers/projects";
+import { CenterContainer } from "../styles/General.styles";
 import {
   Project,
-  ProjectGradient,
+  ProjectDescription,
   ProjectImg,
-  ProjectsSection,
+  ProjectsContainer,
+  ProjectSkillTag,
+  ProjectTitle,
 } from "../styles/Projects.styles";
-import { SkillTag } from "../styles/Skills.styles";
 
 export const Projects = () => {
   return (
-    <ProjectsSection>
-      <Project>
-        <ProjectGradient />
-        <ProjectImg />
-        {projects.map((project) =>
-          project.tags.map((tag) => <SkillTag {...tag}>{tag.name}</SkillTag>)
-        )}
-      </Project>
-    </ProjectsSection>
+    <CenterContainer>
+      <ProjectsContainer>
+        <Project>
+          <ProjectTitle>ToDo App</ProjectTitle>
+          <ProjectImg />
+          {projects.map((project) =>
+            project.tags.map((tag) => (
+              <ProjectSkillTag {...tag}>{tag.name}</ProjectSkillTag>
+            ))
+          )}
+          <ProjectDescription>Hello this is my project.</ProjectDescription>
+        </Project>
+        <Project>
+          <ProjectTitle>ToDo App</ProjectTitle>
+          <ProjectImg />
+          {projects.map((project) =>
+            project.tags.map((tag) => (
+              <ProjectSkillTag {...tag}>{tag.name}</ProjectSkillTag>
+            ))
+          )}
+          <ProjectDescription>Hello this is my project.</ProjectDescription>
+        </Project>
+      </ProjectsContainer>
+    </CenterContainer>
   );
 };
