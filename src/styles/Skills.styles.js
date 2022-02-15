@@ -14,7 +14,7 @@ export const LeftSkills = styled.div`
 
 export const RightSkills = styled.div`
   grid-column: 6/13;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); */
   padding: 1.5em;
   border-radius: 0.5em;
   min-height: 160px;

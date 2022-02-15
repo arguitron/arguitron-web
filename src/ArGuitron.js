@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutMe } from "./components/AboutMe";
+import { ContactMe } from "./components/ContactMe";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Projects } from "./components/Projects";
@@ -13,6 +14,7 @@ export const ArGuitron = () => {
       <AboutMe />
       <Skills />
       <Projects />
+      <ContactMe />
     </>
   );
 };

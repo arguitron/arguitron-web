@@ -50,9 +50,16 @@ const gitTag = {
 export const projects = [
   {
     id: "todoapp",
-    name: "ToDo App",
+    title: "ToDo App",
     desc: "This is a very large and in depth description",
     tags: [reactTag, cssTag],
     src: "/assets/projects/todoApp.png",
+  },
+  {
+    id: "heroesapp",
+    title: "Heroes App",
+    desc: "This is a very large and in depth description",
+    tags: [reactTag, reactRouterTag],
+    src: "/assets/projects/heroesApp.png",
   },
 ];

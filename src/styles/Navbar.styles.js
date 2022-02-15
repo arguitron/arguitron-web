@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const StyledNavbar = styled.nav`
   padding: 0.75em;
-  background-color: #21325e;
+  background-color: #0066ff;
   color: #fff;
+  position: fixed;
+  width: 100%;
 `;
 
 export const CenterContainer = styled.div`

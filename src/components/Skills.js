@@ -32,6 +32,7 @@ export const Skills = () => {
                 onMouseEnter={() => handleSubskills(skill)}
                 icon={skill.icon}
                 size="3x"
+                title={skill.name}
               />
             </SkillIcon>
           ))}
