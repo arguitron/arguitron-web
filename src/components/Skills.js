@@ -5,6 +5,8 @@ import {
   RightSkills,
   SkillIcon,
   SkillsContainer,
+  SkillsIcons,
+  SkillsTags,
   SkillTag,
 } from "../styles/Skills.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,31 +27,38 @@ export const Skills = () => {
     <CenterContainer>
       <SkillsContainer>
         <LeftSkills>
-          {skills.map((skill) => (
-            <SkillIcon key={skill.id} {...skill} currentSkill={currentSkill}>
-              <FontAwesomeIcon
-                className="skillIcon"
-                onMouseEnter={() => handleSubskills(skill)}
-                icon={skill.icon}
-                size="3x"
-                title={skill.name}
-              />
-            </SkillIcon>
-          ))}
+          Hover for details
+          <SkillsIcons>
+            {skills.map((skill) => (
+              <SkillIcon key={skill.id} {...skill} currentSkill={currentSkill}>
+                <FontAwesomeIcon
+                  className="skillIcon"
+                  onMouseEnter={() => handleSubskills(skill)}
+                  icon={skill.icon}
+                  size="3x"
+                  title={skill.name}
+                />
+              </SkillIcon>
+            ))}
+          </SkillsIcons>
         </LeftSkills>
+
         <RightSkills>
-          {subSkills.map(
-            (skill) =>
-              skill && (
-                <SkillTag
-                  className="tag animate__animated animate__fadeIn"
-                  key={skill.id}
-                  {...skill}
-                >
-                  {skill.name}
-                </SkillTag>
-              )
-          )}
+          Frameworks, libraries and more...
+          <SkillsTags>
+            {subSkills.map(
+              (skill) =>
+                skill && (
+                  <SkillTag
+                    className="tag animate__animated animate__fadeIn"
+                    key={skill.id}
+                    {...skill}
+                  >
+                    {skill.name}
+                  </SkillTag>
+                )
+            )}
+          </SkillsTags>
         </RightSkills>
       </SkillsContainer>
     </CenterContainer>

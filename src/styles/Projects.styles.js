@@ -21,10 +21,14 @@ export const Project = styled.div`
 `;
 
 export const TopIcon = styled.div`
-  color: ${({ targetIcon }) => (targetIcon === "github" ? "red" : "blue")};
+  color: ${({ targetIcon }) => (targetIcon === "github" ? "gray" : "gray")};
   justify-content: space-between;
   display: inline-block;
   margin-left: 0.5em;
+  transition: 0.4s;
+  &:hover {
+    color: #fff;
+  }
 `;
 
 export const ProjectTitle = styled.h3``;

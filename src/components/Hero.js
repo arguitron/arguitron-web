@@ -9,12 +9,12 @@ import {
 export const Hero = () => {
   return (
     <StyledHero>
-      <HeroImg />
+      <HeroImg className="animate__animated animate__fadeIn" />
       <div>
-        <HeroTitle className="animate__animated animate__fadeIn">
+        <HeroTitle className="animate__animated animate__fadeInRight">
           Hi, I'm Abel
         </HeroTitle>
-        <HeroDesc className="animate__animated animate__fadeInLeft animate__delay-1s">
+        <HeroDesc className="animate__animated animate__fadeIn animate__delay-2s">
           a front end developer
         </HeroDesc>
       </div>

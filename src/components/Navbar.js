@@ -10,7 +10,7 @@ import {
 export const Navbar = () => {
   return (
     <>
-      <StyledNavbar>
+      <StyledNavbar className="animate__animated animate__fadeIn">
         <CenterContainer>
           <LeftContainer>AR Guitron</LeftContainer>
           <RightContainer>

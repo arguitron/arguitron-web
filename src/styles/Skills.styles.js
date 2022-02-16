@@ -7,6 +7,12 @@ export const SkillsContainer = styled.div`
 `;
 export const LeftSkills = styled.div`
   grid-column: 1/6;
+  /* display: grid;
+  grid-template-columns: repeat(5, minmax(auto, 1fr));
+  gap: 0.5em; */
+`;
+
+export const SkillsIcons = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(auto, 1fr));
   gap: 0.5em;
@@ -15,10 +21,17 @@ export const LeftSkills = styled.div`
 export const RightSkills = styled.div`
   grid-column: 6/13;
   /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); */
+  /* padding: 1.5em;
+  border-radius: 0.5em;
+  min-height: 160px;
+  background-color: #272727; */
+`;
+
+export const SkillsTags = styled.div`
   padding: 1.5em;
   border-radius: 0.5em;
   min-height: 160px;
-  background-color: #caf0f8;
+  background-color: #272727;
 `;
 
 export const SkillIcon = styled.div`
