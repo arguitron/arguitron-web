@@ -8,6 +8,7 @@ export const StyledHero = styled.main`
   position: relative;
   overflow: hidden;
   margin-bottom: 2em;
+  z-index: -1;
 `;
 
 export const HeroTitle = styled.h1`

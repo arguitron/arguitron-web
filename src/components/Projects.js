@@ -20,6 +20,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 export const Projects = () => {
   return (
     <CenterContainer>
+      <h2>Projects</h2>
       <ProjectsContainer>
         {projects.map((project) => (
           <Project key={project.id}>

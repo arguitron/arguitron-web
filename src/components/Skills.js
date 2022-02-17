@@ -25,6 +25,7 @@ export const Skills = () => {
   };
   return (
     <CenterContainer>
+      <h2>Skills</h2>
       <SkillsContainer>
         <LeftSkills>
           Hover for details

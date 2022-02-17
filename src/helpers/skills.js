@@ -9,7 +9,7 @@ import {
 const onProgress = {
   id: "onp1",
   name: "currently learning...",
-  bgColor: "blue",
+  bgColor: "gray",
   color: "#fff",
 };
 
@@ -52,8 +52,8 @@ export const skills = [
       {
         id: "reactjs",
         name: "reactjs",
-        bgColor: "#000",
-        color: "blue",
+        bgColor: "#2C3333",
+        color: "#398AB9",
       },
     ],
   },
@@ -61,7 +61,7 @@ export const skills = [
     id: "faReact",
     name: "reactjs",
     icon: faReact,
-    iconColor: "blue",
+    iconColor: "#2666CF",
     tag: {
       bgColor: "blue",
       color: "#fff",
@@ -71,13 +71,13 @@ export const skills = [
       {
         id: "reactRouter",
         name: "react-router",
-        bgColor: "red",
+        bgColor: "#BB004B",
         color: "#fff",
       },
       {
         id: "styledComponents",
         name: "styled-components",
-        bgColor: "pink",
+        bgColor: "#FF5C8D",
         color: "#fff",
       },
     ],

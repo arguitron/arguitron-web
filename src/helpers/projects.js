@@ -8,14 +8,14 @@ const reactTag = {
 const reactRouterTag = {
   id: "reactRouterTag",
   name: "react-router",
-  bgColor: "red",
+  bgColor: "#BB004B",
   color: "#fff",
 };
 
 const styledComponentsTag = {
   id: "styledComponentsTag",
   name: "styled-components",
-  bgColor: "pink",
+  bgColor: "#FF5C8D",
   color: "#fff",
 };
 
@@ -29,7 +29,7 @@ const html5Tag = {
 const cssTag = {
   id: "cssTag",
   name: "css",
-  bgColor: "blue",
+  bgColor: "#2940D3",
   color: "#fff",
 };
 
