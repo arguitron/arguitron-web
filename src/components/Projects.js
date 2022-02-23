@@ -1,6 +1,6 @@
 import React from "react";
 import { projects } from "../helpers/projects";
-import { CenterContainer } from "../styles/General.styles";
+import { CenterContainer, Subtitle } from "../styles/General.styles";
 import {
   Project,
   ProjectDescription,
@@ -20,7 +20,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 export const Projects = () => {
   return (
     <CenterContainer>
-      <h2>Projects</h2>
+      <Subtitle>Projects</Subtitle>
       <ProjectsContainer>
         {projects.map((project) => (
           <Project key={project.id}>

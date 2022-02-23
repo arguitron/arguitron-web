@@ -4,7 +4,6 @@ export const ProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
   gap: 1.5em;
-  margin-top: 2.5em;
 `;
 
 export const ProjectHeader = styled.div`

@@ -16,6 +16,7 @@ export const SkillsIcons = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(auto, 1fr));
   gap: 0.5em;
+  margin-top: 0.75em;
 `;
 
 export const RightSkills = styled.div`
@@ -32,6 +33,7 @@ export const SkillsTags = styled.div`
   border-radius: 0.5em;
   min-height: 160px;
   background-color: #272727;
+  margin-top: 0.75em;
 `;
 
 export const SkillIcon = styled.div`
@@ -54,4 +56,13 @@ export const SkillTag = styled.div`
   font-weight: bold;
   display: inline-block;
   font-size: 0.9rem;
+`;
+
+export const SkillSubtitle = styled.div`
+  border: 1px solid #50d890;
+  background-color: #272727;
+  padding: 0.25em 0.5em;
+  display: inline-block;
+  color: #50d890;
+  border-radius: 0.5em 0 0.5em 0;
 `;

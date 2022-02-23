@@ -7,13 +7,14 @@ import {
   SkillsContainer,
   SkillsIcons,
   SkillsTags,
+  SkillSubtitle,
   SkillTag,
 } from "../styles/Skills.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./about.css";
 import { skills } from "../helpers/skills";
-import { CenterContainer } from "../styles/General.styles";
+import { CenterContainer, Subtitle } from "../styles/General.styles";
 
 export const Skills = () => {
   const [subSkills, setSubskills] = useState([]);
@@ -25,10 +26,11 @@ export const Skills = () => {
   };
   return (
     <CenterContainer>
-      <h2>Skills</h2>
+      <Subtitle>Skills</Subtitle>
       <SkillsContainer>
         <LeftSkills>
-          Hover for details
+          <SkillSubtitle>Hover the icon for details</SkillSubtitle>
+
           <SkillsIcons>
             {skills.map((skill) => (
               <SkillIcon key={skill.id} {...skill} currentSkill={currentSkill}>
@@ -45,7 +47,8 @@ export const Skills = () => {
         </LeftSkills>
 
         <RightSkills>
-          Frameworks, libraries and more...
+          <SkillSubtitle>Frameworks, libraries and more...</SkillSubtitle>
+
           <SkillsTags>
             {subSkills.map(
               (skill) =>

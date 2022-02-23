@@ -33,6 +33,20 @@ const cssTag = {
   color: "#fff",
 };
 
+const postCssTag = {
+  id: "postCssTag",
+  name: "post-css",
+  bgColor: "#fff",
+  color: "orange",
+};
+
+const bootstrapTag = {
+  id: "bootstrapTag",
+  name: "bootstrap",
+  bgColor: "#fff",
+  color: "purple",
+};
+
 const jsTag = {
   id: "jsTag",
   name: "javascript",
@@ -44,6 +58,13 @@ const gitTag = {
   id: "gitTag",
   name: "git",
   bgColor: "orange",
+  color: "#fff",
+};
+
+const githubTag = {
+  id: "githubTag",
+  name: "github",
+  bgColor: "#000",
   color: "#fff",
 };
 
