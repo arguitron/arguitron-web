@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   max-width: 500px;
   margin: 0 auto;
+  @media (max-width: 525px) {
+    width: 290px;
+  }
 `;
 
 export const PresentationCard = styled.div`
@@ -25,6 +28,10 @@ export const AboutMeBlob = styled.img.attrs({
   position: absolute;
   right: 70px;
   top: -42px;
+
+  @media (max-width: 525px) {
+    right: -33px;
+  }
 `;
 
 export const AboutMeImg = styled.img.attrs({

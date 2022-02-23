@@ -1,12 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { ContactIcon, ContactMeSection } from "../styles/ContactMe.styles";
+import {
+  ContactContainer,
+  ContactIcon,
+  ContactMeSection,
+} from "../styles/ContactMe.styles";
 import { CenterContainer, Subtitle } from "../styles/General.styles";
 
 export const ContactMe = () => {
   return (
-    <CenterContainer>
+    <ContactContainer>
       <Subtitle>Contact me</Subtitle>
       <ContactMeSection>
         <ContactIcon contactIcon="github">
@@ -16,6 +20,6 @@ export const ContactMe = () => {
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </ContactIcon>
       </ContactMeSection>
-    </CenterContainer>
+    </ContactContainer>
   );
 };

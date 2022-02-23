@@ -26,4 +26,8 @@ export const RightContainer = styled.div`
   list-style-type: none;
 `;
 
-export const NavbarItem = styled.li``;
+export const NavbarItem = styled.li`
+  @media (max-width: 480px) {
+    display: none;
+  }
+`;

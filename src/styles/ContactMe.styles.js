@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { CenterContainer } from "./General.styles";
 export const ContactMeSection = styled.div`
   display: flex;
   justify-content: center;
@@ -13,4 +13,8 @@ export const ContactIcon = styled.div`
   &:hover {
     color: ${({ contactIcon }) => (contactIcon === "github" ? "red" : "green")};
   }
+`;
+
+export const ContactContainer = styled(CenterContainer)`
+  text-align: center;
 `;

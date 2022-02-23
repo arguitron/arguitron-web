@@ -4,6 +4,11 @@ export const ProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
   gap: 1.5em;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ProjectHeader = styled.div`
@@ -16,7 +21,7 @@ export const Project = styled.div`
   padding: 1.5em;
   padding-top: 1em;
   color: #fff;
-  border-radius: 0.5em; ;
+  border-radius: 0.5em;
 `;
 
 export const TopIcon = styled.div`
@@ -26,7 +31,7 @@ export const TopIcon = styled.div`
   margin-left: 0.5em;
   transition: 0.4s;
   &:hover {
-    color: #fff;
+    color: #50d890;
   }
 `;
 

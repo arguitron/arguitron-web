@@ -28,7 +28,8 @@ export const HeroImg = styled.img.attrs({
   src: "/assets/herobg4.svg",
 })`
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   z-index: -1;
   animation-duration: 2s;
+  top: 0;
 `;
