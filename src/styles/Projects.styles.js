@@ -31,7 +31,8 @@ export const TopIcon = styled.div`
   margin-left: 0.5em;
   transition: 0.4s;
   &:hover {
-    color: #50d890;
+    color: ${({ targetIcon }) =>
+      targetIcon === "github" ? "#000" : "#008cff"};
   }
 `;
 
@@ -41,7 +42,6 @@ export const ProjectImg = styled.img.attrs(({ imgSrc }) => ({
 }))`
   width: 100%;
   border-radius: 0.5em;
-  margin-bottom: 1em;
 `;
 
 export const ProjectSkillTag = styled(SkillTag)`
@@ -53,4 +53,45 @@ export const ProjectSkillTag = styled(SkillTag)`
 
 export const ProjectDescription = styled.div`
   margin-top: 1em;
+`;
+
+export const GlassContainer = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  border-radius: 0.5em;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  transition: all 0.4s;
+  &:hover {
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: unset;
+    transition: all 0.4s;
+  }
+`;
+
+export const ProjectImgContainer = styled.div`
+  position: relative;
+  margin-bottom: 1em;
+`;
+
+export const ProjectIcons = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+`;
+
+export const RelativeContainer = styled.div`
+  position: relative;
 `;

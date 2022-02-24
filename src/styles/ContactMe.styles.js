@@ -7,7 +7,8 @@ export const ContactMeSection = styled.div`
 `;
 
 export const ContactIcon = styled.div`
-  color: ${({ contactIcon }) => (contactIcon === "github" ? "#000" : "blue")};
+  color: ${({ contactIcon }) =>
+    contactIcon === "github" ? "#000" : "#1597E5"};
   transition: 0.4s;
   margin-right: ${({ contactIcon }) => contactIcon === "github" && "2em"};
   &:hover {

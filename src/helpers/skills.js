@@ -5,6 +5,18 @@ import {
   faReact,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
+import styledComponents from "styled-components";
+import {
+  bootstrapTag,
+  cssTag,
+  githubTag,
+  gitTag,
+  html5Tag,
+  jsTag,
+  reactRouterTag,
+  reactTag,
+  styledComponentsTag,
+} from "./tags";
 
 const onProgress = {
   id: "onp1",
@@ -19,10 +31,7 @@ export const skills = [
     name: "html",
     icon: faHtml5,
     iconColor: "orange",
-    tag: {
-      bgColor: "orange",
-      color: "#fff",
-    },
+    tag: html5Tag,
     isSubskills: false,
     subSkills: [onProgress],
   },
@@ -31,29 +40,26 @@ export const skills = [
     name: "css",
     icon: faCss3Alt,
     iconColor: "blue",
-    tag: {
-      bgColor: "blue",
-      color: "#fff",
-    },
+    tag: cssTag,
     isSubskills: false,
-    subSkills: [onProgress],
+    subSkills: [
+      {
+        ...bootstrapTag,
+        id: "bootStrap",
+      },
+    ],
   },
   {
     id: "faJsSquare",
     name: "javascript",
     icon: faJsSquare,
     iconColor: "yellow",
-    tag: {
-      bgColor: "yellow",
-      color: "#000",
-    },
+    tag: jsTag,
     isSubskills: false,
     subSkills: [
       {
+        ...reactTag,
         id: "reactjs",
-        name: "reactjs",
-        bgColor: "#2C3333",
-        color: "#398AB9",
       },
     ],
   },
@@ -62,23 +68,16 @@ export const skills = [
     name: "reactjs",
     icon: faReact,
     iconColor: "#2666CF",
-    tag: {
-      bgColor: "blue",
-      color: "#fff",
-    },
+    tag: reactTag,
     isSubskills: false,
     subSkills: [
       {
+        ...reactRouterTag,
         id: "reactRouter",
-        name: "react-router",
-        bgColor: "#BB004B",
-        color: "#fff",
       },
       {
+        ...styledComponentsTag,
         id: "styledComponents",
-        name: "styled-components",
-        bgColor: "#FF5C8D",
-        color: "#fff",
       },
     ],
   },
@@ -87,11 +86,13 @@ export const skills = [
     name: "git",
     icon: faGitAlt,
     iconColor: "orange",
-    tag: {
-      bgColor: "orange",
-      color: "#fff",
-    },
+    tag: gitTag,
     isSubskills: false,
-    subSkills: [onProgress],
+    subSkills: [
+      {
+        ...githubTag,
+        id: "gitHub",
+      },
+    ],
   },
 ];

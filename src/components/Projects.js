@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "../helpers/projects";
 import { CenterContainer, Subtitle } from "../styles/General.styles";
 import {
+  GlassContainer,
   Project,
   ProjectDescription,
   ProjectHeader,
+  ProjectIcons,
   ProjectImg,
+  ProjectImgContainer,
   ProjectsContainer,
   ProjectSkillTag,
   ProjectTitle,
+  RelativeContainer,
   TopIcon,
 } from "../styles/Projects.styles";
 
@@ -26,17 +30,20 @@ export const Projects = () => {
           <Project key={project.id}>
             <ProjectHeader>
               <ProjectTitle>{project.title}</ProjectTitle>
-              <div>
+            </ProjectHeader>
+            <ProjectImgContainer>
+              <ProjectImg imgSrc={project.src} />
+
+              <GlassContainer />
+              <ProjectIcons>
                 <TopIcon targetIcon="github">
-                  <FontAwesomeIcon icon={faGithubSquare} size="lg" />
+                  <FontAwesomeIcon icon={faGithubSquare} size="3x" />
                 </TopIcon>
                 <TopIcon targetIcon="watch">
-                  <FontAwesomeIcon icon={faEye} size="lg" />
+                  <FontAwesomeIcon icon={faEye} size="3x" />
                 </TopIcon>
-              </div>
-            </ProjectHeader>
-
-            <ProjectImg imgSrc={project.src} />
+              </ProjectIcons>
+            </ProjectImgContainer>
             {project.tags.map((tag) => (
               <ProjectSkillTag key={tag.id} {...tag}>
                 {tag.name}
