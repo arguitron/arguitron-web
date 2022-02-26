@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import blob from "../assets/blob.svg";
+import io from "../assets/io.png";
 export const AboutContainer = styled.div`
   max-width: 500px;
   margin: 0 auto;
@@ -22,7 +23,7 @@ export const AboutMeImgContainer = styled.div`
 `;
 
 export const AboutMeBlob = styled.img.attrs({
-  src: "/assets/blob.svg",
+  src: blob,
 })`
   width: 350px;
   position: absolute;
@@ -35,7 +36,7 @@ export const AboutMeBlob = styled.img.attrs({
 `;
 
 export const AboutMeImg = styled.img.attrs({
-  src: "/assets/io.png",
+  src: io,
 })`
   position: relative;
 `;

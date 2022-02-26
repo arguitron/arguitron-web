@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import herobg from "../assets/herobg4.svg";
 
 export const StyledHero = styled.main`
   display: flex;
@@ -25,7 +26,7 @@ export const HeroDesc = styled.p`
 `;
 
 export const HeroImg = styled.img.attrs({
-  src: "/assets/herobg4.svg",
+  src: herobg,
 })`
   position: absolute;
   min-width: 100%;
