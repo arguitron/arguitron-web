@@ -23,7 +23,7 @@ export const AboutMeImgContainer = styled.div`
 `;
 
 export const AboutMeBlob = styled.img.attrs({
-  src: blob,
+  src: window.location.origin + "/assets/blob.svg",
   alt: "blob-image",
 })`
   width: 350px;
@@ -37,7 +37,7 @@ export const AboutMeBlob = styled.img.attrs({
 `;
 
 export const AboutMeImg = styled.img.attrs({
-  src: io,
+  src: window.location.origin + "/assets/io.png",
   alt: "picture-of-me",
 })`
   position: relative;

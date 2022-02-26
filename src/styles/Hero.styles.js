@@ -26,7 +26,7 @@ export const HeroDesc = styled.p`
 `;
 
 export const HeroImg = styled.img.attrs({
-  src: herobg,
+  src: window.location.origin + "/assets/herobg4.svg",
   alt: "bakground-image",
 })`
   position: absolute;
