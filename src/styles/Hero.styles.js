@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import herobg from "../assets/herobg4.svg";
 
 export const StyledHero = styled.main`
   display: flex;
@@ -26,7 +25,7 @@ export const HeroDesc = styled.p`
 `;
 
 export const HeroImg = styled.img.attrs({
-  src: window.location.origin + "/assets/herobg4.svg",
+  src: window.location.origin + "/arguitron-web/assets/herobg4.svg",
   alt: "bakground-image",
 })`
   position: absolute;

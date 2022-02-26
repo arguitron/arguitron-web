@@ -1,18 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.8080ada2.css",
-    "main.js": "/static/js/main.21f81579.js",
-    "static/media/heroesApp.png": "/static/media/heroesApp.0ba60165d532c05d767a.png",
-    "static/media/todoApp.png": "/static/media/todoApp.355d55285c2e489ae9c6.png",
-    "static/media/io.png": "/static/media/io.123b0441679759c03b30.png",
-    "static/media/herobg4.svg": "/static/media/herobg4.3ee8ba75b8b99155c614acfa8f611e26.svg",
+    "main.js": "/static/js/main.576bf516.js",
     "index.html": "/index.html",
-    "static/media/blob.svg": "/static/media/blob.2d8d39943ecdb800eeec2a20ebe49dd7.svg",
     "main.8080ada2.css.map": "/static/css/main.8080ada2.css.map",
-    "main.21f81579.js.map": "/static/js/main.21f81579.js.map"
+    "main.576bf516.js.map": "/static/js/main.576bf516.js.map"
   },
   "entrypoints": [
     "static/css/main.8080ada2.css",
-    "static/js/main.21f81579.js"
+    "static/js/main.576bf516.js"
   ]
 }
