@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ArGuitron } from "./ArGuitron";
+import { ARGuitron } from "./ARGuitron";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ArGuitron />
+    <ARGuitron />
   </React.StrictMode>,
   document.getElementById("root")
 );

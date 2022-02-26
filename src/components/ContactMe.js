@@ -13,11 +13,17 @@ export const ContactMe = () => {
     <ContactContainer>
       <Subtitle>Contact me</Subtitle>
       <ContactMeSection>
-        <ContactIcon contactIcon="github">
-          <FontAwesomeIcon icon={faGithub} size="3x" />
+        <ContactIcon
+          contactIcon="github"
+          contactURL="https://github.com/arguitron"
+        >
+          <FontAwesomeIcon title="github" icon={faGithub} size="3x" />
         </ContactIcon>
-        <ContactIcon contactIcon="linkedin">
-          <FontAwesomeIcon icon={faLinkedin} size="3x" />
+        <ContactIcon
+          contactIcon="linkedin"
+          contactURL="https://www.linkedin.com/in/abel-resendiz-guitron-342486224/"
+        >
+          <FontAwesomeIcon title="linkedin" icon={faLinkedin} size="3x" />
         </ContactIcon>
       </ContactMeSection>
     </ContactContainer>

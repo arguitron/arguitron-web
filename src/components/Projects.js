@@ -36,10 +36,10 @@ export const Projects = () => {
 
               <GlassContainer />
               <ProjectIcons>
-                <TopIcon targetIcon="github">
+                <TopIcon targetIcon="github" targetURL={project.githubURL}>
                   <FontAwesomeIcon icon={faGithubSquare} size="3x" />
                 </TopIcon>
-                <TopIcon targetIcon="watch">
+                <TopIcon targetIcon="watch" targetURL={project.webpageURL}>
                   <FontAwesomeIcon icon={faEye} size="3x" />
                 </TopIcon>
               </ProjectIcons>

@@ -9,6 +9,8 @@ export const projects = [
     tags: [reactTag, cssTag],
     src: "/assets/projects/todoApp.png",
     isHovered: false,
+    githubURL: "https://github.com/arguitron/todo-app",
+    webpageURL: "https://arguitron.github.io/todo-app/",
   },
   {
     id: "heroesapp",
@@ -18,5 +20,7 @@ export const projects = [
     tags: [reactTag, reactRouterTag, bootstrapTag],
     src: "/assets/projects/heroesApp.png",
     isHovered: false,
+    githubURL: "https://github.com/arguitron/heroes-app",
+    webpageURL: "https://arguitron.github.io/heroes-app/",
   },
 ];

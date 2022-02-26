@@ -1,23 +1,13 @@
 import React from "react";
-import { AboutMe } from "./components/AboutMe";
-import { ContactMe } from "./components/ContactMe";
-import { Hero } from "./components/Hero";
-import { Navbar } from "./components/Navbar";
-import { Projects } from "./components/Projects";
-import { Skills } from "./components/Skills";
-import { GeneralMargin } from "./styles/General.styles";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Resume } from "./components/Resume";
 
-export const ArGuitron = () => {
+export const ARGuitron = () => {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <GeneralMargin>
-        <AboutMe />
-        <Skills />
-        <Projects />
-      </GeneralMargin>
-      <ContactMe />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Resume />} />
+      </Routes>
+    </Router>
   );
 };

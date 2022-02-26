@@ -24,10 +24,23 @@ export const Project = styled.div`
   border-radius: 0.5em;
 `;
 
-export const TopIcon = styled.div`
-  color: ${({ targetIcon }) => (targetIcon === "github" ? "gray" : "gray")};
-  justify-content: space-between;
-  display: inline-block;
+// export const TopIcon = styled.div`
+//   color: rgba(0, 0, 0, 0.25);
+//   justify-content: space-between;
+//   display: inline-block;
+//   margin-left: 0.5em;
+//   transition: 0.4s;
+//   &:hover {
+//     color: ${({ targetIcon }) =>
+//       targetIcon === "github" ? "#000" : "#008cff"};
+//   }
+// `;
+
+export const TopIcon = styled.a.attrs(({ targetURL }) => ({
+  href: targetURL,
+  target: "_blank",
+}))`
+  color: rgba(0, 0, 0, 0.25);
   margin-left: 0.5em;
   transition: 0.4s;
   &:hover {
