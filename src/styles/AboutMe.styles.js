@@ -24,6 +24,7 @@ export const AboutMeImgContainer = styled.div`
 
 export const AboutMeBlob = styled.img.attrs({
   src: blob,
+  alt: "blob-image",
 })`
   width: 350px;
   position: absolute;
@@ -37,6 +38,7 @@ export const AboutMeBlob = styled.img.attrs({
 
 export const AboutMeImg = styled.img.attrs({
   src: io,
+  alt: "picture-of-me",
 })`
   position: relative;
 `;
